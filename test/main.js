@@ -5,6 +5,7 @@ setTimeout(function() {
     par.innerHTML = "Your image should be loading...  If the image does not load try either refresh the web page or press the button below.";
     bt.style.visibility = "visible";
 }, random(1000,4000));
+var audio = new Audio('snd.mp3');
 function hehe() {
     const imag = document.getElementById("png");
     const par = document.getElementById("tx");
@@ -14,7 +15,6 @@ function hehe() {
     bt.remove();
 
     imag.style.visibility = "visible";
-    var audio = new Audio('snd.mp3');
     audio.play();
     setTimeout(function() {
         imag.remove();
